@@ -1,0 +1,64 @@
+html, body, div {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    width: 1000px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+button {
+    height: 2rem;
+    padding: 0 1rem;
+}
+
+:root {
+    --cell-width: 16px;
+    --cell-height: 16px;
+}
+
+.main-container {
+    display: flex;
+    width: 800px;
+    height: 450px;
+    border: 1rem solid rgb(127, 93, 42);
+    border-radius: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+}
+
+div {
+    background-color: rgb(232, 219, 203);
+    user-select: none;
+}
+
+.cell {
+    width: var(--cell-width);
+    height: var(--cell-height);
+    flex: 0 0 auto;
+}
+
+.cell:hover {
+    background-color: rgb(38, 38, 38);
+}
+
+.drawn {
+    background-color:  rgb(38, 38, 38);
+}
+
