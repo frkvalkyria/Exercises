@@ -1,4 +1,4 @@
-html, body, div {
+html, body, div, button {
     margin: 0;
 	padding: 0;
 	border: 0;
@@ -12,19 +12,43 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    background-color: #242424;
 }
 
-header {
-    display: flex;
-    flex-direction: row;
-    width: 1000px;
-    justify-content: space-around;
-    align-items: center;
+h1 {
+    font-family: 'Sonsie One', cursive;
+    color: #D3A65F;
+
 }
 
 button {
-    height: 2rem;
-    padding: 0 1rem;
+    height: 3.75rem;
+    padding: 0.5rem 1rem;
+    position: relative;
+    bottom: 35px;
+    font-size: 1.25rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    cursor: pointer;
+    background: #EDE9E9;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25), inset 2px 2px 4px #FFFFFF, inset 0px 4px 4px #FFFFFF, inset 0px -2px 4px rgba(0, 0, 0, 0.25), inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+button:hover{
+    box-shadow: inset 2px 2px 2px rgba(32, 30, 30, 0.25), inset 3px 4px 2px rgba(32, 30, 30, 0.25), inset 0px -2px 1px #FFFFFF, inset -10px -20px 1px #EDE9E9;
+}
+
+.border {
+    background-color: #CF1518;
+    border-radius: 5rem;
+    width: 850px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 2rem;
+    border: 3px solid #B6130E;
 }
 
 :root {
@@ -34,18 +58,16 @@ button {
 
 .main-container {
     display: flex;
-    width: 800px;
+    width: 650px;
     height: 450px;
-    border: 1rem solid rgb(127, 93, 42);
-    border-radius: 1rem;
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 5rem;
-}
-
-div {
-    background-color: rgb(232, 219, 203);
+    background-color: #BBBBC5;
     user-select: none;
+    border: 3px solid #8B0216;
+    border-radius: 25px;
+    box-shadow: inset 4px 3px 6px rgba(32, 30, 30, 0.15), inset 3px 4px 8px rgba(32, 30, 30, 0.15), inset 0px -2px 6px rgba(255, 255, 255, 0.25), inset -4px -4px 6px rgba(237, 233, 233, 0.25);
 }
 
 .cell {
@@ -62,3 +84,12 @@ div {
     background-color:  rgb(38, 38, 38);
 }
 
+@media screen and (max-width: 920px) {
+    .border {
+        
+    }
+
+    .main-container {
+
+    }
+  }

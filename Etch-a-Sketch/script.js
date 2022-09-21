@@ -3,11 +3,7 @@ const SQUARE = {
     height: 8,
 };
 
-//Static values for testing
-const PAPER_WIDTH = 600;
-const PAPER_HEIGHT = 400;
-
-const MAX_WIDTH = 800;
+const MAX_WIDTH = 650;
 const MAX_HEIGHT = 450;
 
 function calculateGridSize(width, height) {
